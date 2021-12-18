@@ -1,16 +1,13 @@
 package main
- 
 import "fmt"
- 
+
 func main() {
- name := "Raj"
- 
- namePointer := &name
- 
- fmt.Println(&namePointer)
- printPointer(namePointer)
+ n := "Raj"
+ nPointer := &n
+ fmt.Println(&nPointer)
+ printPointer(nPointer)
 }
  
-func printPointer(namePointer *string) {
- 	fmt.Println(&namePointer)
+func printPointer(nPointer *string) {
+ 	fmt.Println(&nPointer)
 }
