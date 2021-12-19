@@ -6,13 +6,11 @@ type bot interface {
 	getGreeting() string
 }
 
-type englishBot struct {
-	number int
-}
+type englishBot struct{}
 type spanishBot struct{}
 
 func main() {
-	eb := englishBot{number: 9799}
+	eb := englishBot{}
 	sb := spanishBot{}
 
 	printGreeting(eb)
@@ -24,8 +22,7 @@ func printGreeting(b bot) {
 }
 
 func (en englishBot) getGreeting() string {
-	msg := fmt.Sprintf("Hi There! %d", en.number)
-	return msg
+	return "Hi there!"
 }
 
 func (spanishBot) getGreeting() string {
