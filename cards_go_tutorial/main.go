@@ -1,8 +1,12 @@
 package main
 
-func main() {
-	cards := newDeck()
+import "fmt"
 
-	cards.shuffle()
-	cards.print()
+func main() {
+	// cards := newDeck()
+
+	// cards.shuffle()
+	// cards.print()
+	raj := "raj"
+	fmt.Print("My name is :", string(raj))
 }
